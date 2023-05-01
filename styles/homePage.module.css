@@ -1,0 +1,226 @@
+.homePage {
+  position: relative;
+}
+
+.homePage_Box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5.5fr;
+  height: 100vh;
+  /* border: 1px solid gold; */
+  position: fixed;
+}
+
+.homePage_Box_SideBar {
+  background-color: #202123;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  overflow-y: scroll;
+  position: relative;
+}
+
+.homePage_Box_main_data {
+  width: 60%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.homePage_Box_SideBar button {
+  margin: 0.5rem;
+  padding: 0.8rem;
+  background-color: transparent;
+  border: solid 0.5px rgba(255, 255, 255, 0.5);
+  border-radius: 0.2rem;
+  text-align: left;
+}
+
+.homePage_Box_SideBar_nav {
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  text-align: center;
+  border-top: solid 0.5px rgba(255, 255, 255, 0.5);
+  width: 100%;
+}
+
+.homePage_Box_SideBar_history {
+  margin: 0.1rem;
+  padding: 0.8rem;
+}
+
+.homePage_Box_SideBar_history li {
+  list-style-type: none;
+  /* padding: 0.8rem; */
+  /* border: 1px solid gold; */
+  cursor: pointer;
+}
+
+.homePage_Box_main {
+  background-color: #353740;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.homePage_Box_main_bottom_inputContainer_info p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.75rem;
+}
+
+.homePage_Box_main_bottom_inputContainer_info {
+  padding-top: 0.5rem;
+}
+
+.homePage_Box_main_bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homePage_Box_main_bottom_inputContainer {
+  position: relative;
+  width: 60%;
+}
+
+.homePage_Box_main_bottom_inputContainer input {
+  width: 100%;
+  font-size: larger;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  padding: 0.8rem;
+  margin: 0rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 54px 55px,
+    rgba(0, 0, 0, 0.05) 0px -12px 30px, rgba(0, 0, 0, 0.05) 0px 4px 6px,
+    rgba(0, 0, 0, 0.05) 0px 12px 3px, rgba(0, 0, 0, 0.05) 0px -3px 5px;
+}
+
+.homePage_Box_main_bottom_inputContainer_submit {
+  font-size: larger;
+  position: absolute;
+  left: auto;
+  right: 1rem;
+  top: 1rem;
+}
+
+.homePage_Box_main_bottom_inputContainer_submit:hover {
+  cursor: pointer;
+}
+.homePage_Box_main_top {
+  width: 100%;
+}
+
+.homePage_Box_main_feed {
+  background-color: #353740;
+}
+
+.homePage_Box_main_feed li {
+  display: flex;
+  text-align: center;
+  padding-right: 1rem;
+}
+
+.content {
+  text-align: left;
+  margin-left: 3rem;
+}
+
+.homePage_Box_main_feed_role {
+  margin-right: 1.5rem;
+}
+
+.uniqueTitle {
+  height: 2rem;
+}
+
+.uniqueTitle_data {
+  padding: 0.5rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  text-align: left;
+  margin: 0.4rem auto;
+  height: 2rem;
+  display: flex;
+}
+
+.uniqueTitle p {
+  text-align: left;
+}
+.uniqueTitle_data:hover {
+  cursor: pointer;
+  background-color: #444654;
+}
+.homePage_Box_SideBar_button:hover {
+  cursor: pointer;
+}
+
+.sideBar {
+  position: absolute;
+  top: 0;
+  width: 95%;
+  height: 100vh;
+  background-color: #202123;
+  z-index: 11111;
+  transition: all 0.9s linear;
+}
+
+.menuIcon {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-device-width: 800px) and (max-device-width: 1400px) {
+  .homePage_Box {
+    grid-template-columns: 1fr 3.5fr;
+  }
+
+  .homePage_Box_main_data {
+    width: 85%;
+  }
+}
+
+.homePage_Box_SideBar_navigation {
+  max-height: 0.5rem;
+  display: none;
+}
+@media screen and (min-device-width: 300px) and (max-device-width: 800px) {
+  .homePage_Box {
+    grid-template-columns: 1fr;
+  }
+
+  .homePage_Box_main_data {
+    width: 100%;
+  }
+
+  .homePage_Box_main_feed {
+    width: 100%;
+  }
+
+  .homePage_Box_SideBar {
+    display: none;
+  }
+
+  .homePage_Box_main_feed_role {
+    margin-right: -1.5rem;
+  }
+
+  .homePage_Box_main_bottom_inputContainer {
+    width: 90%;
+  }
+
+  .homePage_Box_SideBar_navigation {
+    display: inline-block;
+    padding: 0.5rem;
+    /* background-color: #444654; */
+  }
+  .homePage_Box_main_bottom_inputContainer_info p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+  }
+}
